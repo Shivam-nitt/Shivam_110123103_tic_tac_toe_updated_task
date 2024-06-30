@@ -1,0 +1,133 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(145, 199, 181);
+}
+
+body h3{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px;
+    background-color: rgb(212, 145, 133);
+    padding: 8px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.medium_container{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(19, 19, 180, 0.192);
+    height: fit-content;
+    padding: 50px;
+    margin: 10px;
+
+}
+
+.left_container{
+    display: grid;
+    grid-template-columns: repeat(3,150px);
+    grid-template-rows: repeat(3,150px);
+    background-color: rgb(148, 120, 85);
+    grid-gap: 5px;
+    height: fit-content;
+    /* position: absolute; */
+    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.left_container #box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: solid 2px;
+    border-radius: 10px;
+    font-size: 80px;
+}
+/* 
+#box:nth-child(-n+3){
+    border-top: none;
+}
+
+#box:nth-child(3n+3){
+    border-right: none;
+}
+
+
+#box:nth-child(-n+9){
+    border-bottom: none;
+}
+
+#box:nth-child(3n+1){
+    border-left: none;
+} */
+
+.right_container{
+    display: flex;
+    flex-direction: column;
+    margin: 80px;
+    padding: 10px;
+}
+
+.right_container h3{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.right_container #ResetButton{
+    border: solid 1.8px;
+    padding: 10px 5px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: rgba(168, 125, 73, 0.842);
+    box-shadow:rgb(82, 34, 34) 2px 2px 2px ;
+    font-weight: 600;
+}
+
+.right_container #GameChangeButton{
+    border: solid 1.8px;
+    padding: 10px 5px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: bisque;
+    box-shadow:rgb(83, 50, 50) 2px 2px 2px ;
+    font-weight: 600;
+}
+
+.right_container #GameChangeButton:hover{
+    background-color: rgba(150, 109, 109, 0.89);
+    scale: 1.08;
+    transition-duration: .6s;
+}
+
+.right_container .Turnbutton{
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 5px;
+    border: solid 1.8px;
+    border-radius: 5px;
+    background-color: rgb(141, 203, 48);
+    box-shadow:rgb(82, 34, 34) 2px 2px 2px ;
+    font-size: 15px;
+    width: 180px;
+}
+
+.line {
+    position: absolute;
+    background-color: red;
+    height: 4px;
+    width: 400px;
+    translate: 00px 00px;
+    display: none;
+}
+
