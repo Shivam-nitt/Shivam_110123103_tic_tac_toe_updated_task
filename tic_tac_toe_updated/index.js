@@ -106,6 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if(combination[0]===0&&combination[1]===1&&combination[2]===2){
           line.style.display="block";
+          line.style.rotate="0deg";
           line.style.transform="translate(120px,150px)";
 
         }
@@ -113,12 +114,14 @@ document.addEventListener("DOMContentLoaded", () => {
         //line for 2nd row
         if(combination[0]===3&&combination[1]===4&&combination[2]===5){
           line.style.display="block";
+          line.style.rotate="0deg";
           line.style.transform="translate(120px,310px)";
         }
 
         //line for 3rd row
         if(combination[0]===6 && combination[1]===7 && combination[2]===8){
           line.style.display="block";
+          line.style.rotate="0deg";
           line.style.transform="translate(120px,460px)";
 
         }
@@ -178,6 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
       
       if(combination[0]===0 && combination[1]===1 && combination[2]===2 &&combination[3]===3){
           line.style.display="block";
+          line.style.rotate="0deg";
           line.style.width="550px";
           line.style.transform="translate(120px,155px)";
       }
@@ -186,6 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if(combination[0]===4 && combination[1]===5 && combination[2]===6 &&combination[3]===7){
           line.style.display="block";
+          line.style.rotate="0deg";
           line.style.width="550px";
           line.style.transform="translate(120px,310px)";
       }
@@ -194,6 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if(combination[0]===8 && combination[1]===9 && combination[2]===10 &&combination[3]===11 ){
           line.style.display="block";
+          line.style.rotate="0deg";
           line.style.width="550px";
           line.style.transform="translate(120px,465px)";
       }
@@ -201,6 +207,7 @@ document.addEventListener("DOMContentLoaded", () => {
       //line for 4th row
       if(combination[0]===12 && combination[1]===13 && combination[2]===14 &&combination[3]===15){
           line.style.display="block";
+          line.style.rotate="0deg";
           line.style.width="550px";
           line.style.transform="translate(120px,620px)";}
 
@@ -246,7 +253,7 @@ document.addEventListener("DOMContentLoaded", () => {
           //line for 1st diagonal
 
           if(combination[0]===0 && combination[1]===5 && combination[2]===10 && combination[3]===15){
-              console.log("im n column");
+              
               line.style.display="block";
               line.style.width="750px";
               line.style.rotate="45deg";
@@ -274,6 +281,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // line.style.display = "block";
       
       if(combination[0]===0 && combination[1]===1 && combination[2]===2 &&combination[3]===3 && combination[4]===4){
+          line.style.rotate="0deg";
           line.style.display="block";
           line.style.width="750px";
           line.style.transform="translate(50px,150px)";
@@ -282,6 +290,7 @@ document.addEventListener("DOMContentLoaded", () => {
       //line for 2nd row
 
       if(combination[0]===5 && combination[1]===6 && combination[2]===7 &&combination[3]===8&&combination[4]===9){
+          line.style.rotate="0deg";
           line.style.display="block";
           line.style.width="750px";
           line.style.transform="translate(50px,310px)";
@@ -290,6 +299,8 @@ document.addEventListener("DOMContentLoaded", () => {
       //line for 3rd row
 
       if(combination[0]===10 && combination[1]===11 && combination[2]===12 &&combination[3]===13 && combination[4]===14){
+
+          line.style.rotate="0deg";
           line.style.display="block";
           line.style.width="750px";
           line.style.transform="translate(100px,460px)";
@@ -297,12 +308,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
       //line for 4th row
       if(combination[0]===15 && combination[1]===16 && combination[2]===17 &&combination[3]===18 && combination[4]===19){
+
+        line.style.rotate="0deg";
           line.style.display="block";
           line.style.width="750px";
           line.style.transform="translate(100px,610px)";}
 
           //line for 5th row
       if(combination[0]===20 && combination[1]===21 && combination[2]===22 &&combination[3]===23 && combination[4]===24){
+
+        line.style.rotate="0deg";
           line.style.display="block";
           line.style.width="750px";
           line.style.transform="translate(100px,770px)";}
@@ -313,7 +328,7 @@ document.addEventListener("DOMContentLoaded", () => {
               line.style.display="block";
               line.style.width="700px";
               line.style.rotate="90deg";
-              line.style.transform="translate(450px,210px)";
+              line.style.transform="translate(460px,185px)";
           }
 
           //line for 2nd column
@@ -362,9 +377,9 @@ document.addEventListener("DOMContentLoaded", () => {
           if(combination[0]===0 && combination[1]===6 && combination[2]===12 && combination[3]===18 && combination[4]===24){
   
               line.style.display="block";
-              line.style.width="950px";
+              line.style.width="970px";
               line.style.rotate="45deg";
-              line.style.transform="translate(350px,300px)";
+              line.style.transform="translate(310px,328px)";
           }
 
           //line for 2nd diagonal
@@ -372,9 +387,9 @@ document.addEventListener("DOMContentLoaded", () => {
           if(combination[0]===4 && combination[1]===8 && combination[2]===12 && combination[3]===16 && combination[4]===20){
           
               line.style.display="block";
-              line.style.width="950px";
+              line.style.width="970px";
               line.style.rotate="-45deg";
-              line.style.transform="translate(-300px,350px)";
+              line.style.transform="translate(-310px,328px)";
           }
   }
 
@@ -388,6 +403,8 @@ document.addEventListener("DOMContentLoaded", () => {
       moves = 0;
       updateTurnButton();
       line.style.display = "none";
+      line.style.rotate="0deg";
+      line.style.width="400px";
   }
 
   function handleBoxClick(event) {
